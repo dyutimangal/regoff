@@ -1,0 +1,189 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important Links</title>
+	<link rel="stylesheet" href="/regoff/css/tailwind.min.css" />
+	<link rel="stylesheet" type="text/css" href="/regoff/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+	 <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.cdnfonts.com/css/basier" rel="stylesheet">
+	
+</head>
+
+<body class="overflow-x-hidden">
+  
+
+    <div class="header bg-gray-100">
+      <div class="flex justify-center bg-gray-100 pt-1">
+        
+        <div>
+            <span class="float-left ">
+                <a href="https://iitg.ac.in"><img src="https://i.ibb.co/8z2qtGM/1200px-IIT-Guwahati-Logo-1.png" alt="1200px-IIT-Guwahati-Logo-1" border="0"></a>
+              </span>
+              <span class="float-left pl-4 align-center inline-block align-middle h-full py-2">
+              <h1 class="text-sm m-auto align-center text-center leading-normal align-middle">INDIAN INSTITUTE OF TECHNOLOGY GUWAHATI</h1>
+              </span>
+        </div>
+      </div>
+    </div>
+	
+	
+
+<!-- 2 bar-->
+
+
+        <div class="flex  w-full ">
+          <div class="flex flex-grow" id='nav-content' >
+            <div class="hidden flex-grow items-center justify-center text-sm font-mono h-20 px-4 w-50 text-blue-550 bg-accent active-tab">
+              <a href="/regoff" class="text-center font-bold bar2 heads cursor-pointer" style="font-size: 18px;">OFFICE OF THE REGISTRAR</a>
+            </div>
+            <!-- bg-accent -->
+            <div class="flex px-8 items-center space-x-16 h-20 ">
+              <a class="text-center w-100 bar2 heads hover:text-blue-500" style="font-size: 16px;" href="/regoff/fr">Former Registrars</a>
+			  <a class="text-center w-100 bar2 heads hover:text-blue-500" style="font-size: 16px;" href="/regoff/off">Officials</a>
+			  <a class="text-center w-100 bar2 heads text-blue-500 font-bold" style="font-size: 16px;" href="/regoff/rule">Important Links</a>
+            </div>
+          </div>
+        </div>
+	
+	
+	
+	
+<!--rules and important links-->
+<div class="container md:px-32 px-0 py-20 mx-auto" id="rules">
+  <h3 class="text-black text-4xl mb-10 text-sm heads font-semibold">
+    Rules and Important Links
+  </h3>
+	<% rules.forEach(rule=>{ %>
+  <div class="mt-4 bg-white p-5 rounded-lg shadow-lg lg:mr-80 border sm:mr-auto">
+    <div>
+	
+      <div>
+		<div>
+			<h2 class="text-2xl font-bold mb-2 text-gray-800"><%=rule.title%></h2>
+			<div>
+				<p class="text-gray-700 mt-1 mb-2 mr-56" style="font-size: 16px;">
+				  <%=rule.description%>
+				</p>
+				<p class="text-xs text-gray-700 mt-1 mb-2 mr-56">
+				  <%=rule.link%>
+				</p>
+			</div>
+			<div>
+				<a href="<%=rule.link%>">
+				  <%=rule.link%>
+				</a>
+			</div>
+		</div>
+        <div class=" md:bottom-0 bottom-0 md:-right-16">
+          <div class="flex justify-between">
+            <div class="my-0">
+				 <p class="text-gray-700 mb-0 text-left ">
+					 <%= rule.creation.getDate()+' '+(["January", "February", "March", "April", 
+							"May", "June","July", "August", "September", "October", "November", 
+							"December"][rule.creation.getMonth()])+", "+rule.creation.getFullYear()%>
+				 </p>
+            </div>
+            <div class="my-0">
+                         <p class="mb-0 text-right">
+							 <a href="uploads/rule_pdf/<%=rule.path%>">
+                          <svg class="" width="25" height="25" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9399 30.0015H11.0466C6.3399 30.0015 3.16656 26.9735 3.16656 22.4548V10.8948C3.16656 6.37484 6.3399 3.33484 11.0466 3.33484H21.9399C26.6599 3.33484 29.8332 6.37484 29.8332 10.8948V22.4548C29.8332 26.9735 26.6599 30.0015 21.9399 30.0015ZM19.5265 15.6682H11.0599C10.4999 15.6682 10.0599 16.1215 10.0599 16.6682C10.0599 17.2282 10.4999 17.6682 11.0599 17.6682H19.5265L16.2199 20.9615C16.0332 21.1482 15.9265 21.4148 15.9265 21.6682C15.9265 21.9202 16.0332 22.1748 16.2199 22.3748C16.6065 22.7615 17.2465 22.7615 17.6332 22.3748L22.6599 17.3748C23.0332 17.0015 23.0332 16.3348 22.6599 15.9615L17.6332 10.9615C17.2465 10.5748 16.6065 10.5748 16.2199 10.9615C15.8332 11.3615 15.8332 11.9882 16.2199 12.3882L19.5265 15.6682Z" fill="#A5ADBC"/>
+                            </svg>
+							 </a>
+                         </p>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+    </div>
+  </div>
+	<% }) %>
+</div>
+	
+
+
+
+
+		
+<!--CONTACT US-->
+
+	
+<footer class="text-gray-600 body-font bg-gray-200">
+		<div class="container px-5 pt-8 pb-3 sm:py-10 mx-auto flex items-center sm:flex-row flex-col">
+			<div class="container flex mt-5" >
+	  <div class="max-w-md w-auto lg:flex ">
+		<!--div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"-->
+		  <img class = "h-40  align-top px-12" src="https://event.iitg.ac.in/icann2019/Proceedings_LaTeX/2019/IITG_logo.png" title="IIT_GUWAHATI">
+		</div>
+		<div >
+		  <div class="mb-8">
+			<div class="IITG">
+				<p class="text-grey-darker text-3xl font-black text-black tracking-widest">Office of the Registrar</p>
+			</div>
+			<p class="text-grey-darker text-2xl whitespace-no-wrap text-gray-800 py-4">Indian Institue of Technology, Guwahati<br>Guwahati 781039<br>Assam, INDIA</p>
+			<%contactInfos.forEach(contactInfo=>{ %>
+			<p class="text-grey-darker text-xl font-medium text-gray-600 tracking-widest leading-relaxed" style ="font-family: Red Hat Display;">
+				Phone: <%=contactInfo.phone%><br>Fax: <%=contactInfo.fax%><br>Email: <%=contactInfo.email%></p>
+			  <% }) %>
+		  </div>
+		</div>
+	</div>
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+            href="https://www.facebook.com/swciitg" target="_blank">
+            <!-- <img src="images/nav/hab_logo.svg" alt="hab-logo" class="transform scale-50"> -->
+            <img src="/regoff/images/svg/swc-logo.svg" alt="swc-logo" class="mr-3 transform scale-110">
+            <span class="text-xl">Students' Web Committee</span>
+        </a>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+
+
+<script>
+    $(document).ready(function(){
+      $('#nav-content').prepend($('.active-tab'));
+    })
+    
+  </script>
+<script>
+    const smallnav = document.querySelector("#smallnav");
+    const menu = document.querySelector("#menu");
+
+    smallnav.addEventListener('click', ()=>{
+      if(menu.classList.contains('hidden')){
+          menu.classList.remove('hidden');
+      }else{
+          menu.classList.add('hidden');
+      }
+    })
+  </script>
+
+<script>
+  document.addEventListener("scroll", function () {
+    const navbar = document.querySelector("#shownav");
+    const navbarHeight = 100;
+
+    const distanceFromTop = Math.abs(
+      document.body.getBoundingClientRect().top
+    );
+
+    if (distanceFromTop > navbarHeight+460){
+		navbar.classList.remove("invisible");
+		//navbar.classList.add("transition-property: all transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) transition-duration: 150ms");
+	}
+    else navbar.classList.add("invisible");
+  });
+</script>
+
+
+
+</html>

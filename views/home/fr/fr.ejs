@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Former Registrars</title>
+	<link rel="stylesheet" href="/regoff/css/tailwind.min.css" />
+	<link rel="stylesheet" type="text/css" href="/regoff/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+	 <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.cdnfonts.com/css/basier" rel="stylesheet">
+	
+</head>
+
+<body class="overflow-x-hidden">
+  
+	
+	    <div class="header bg-gray-100">
+      <div class="flex justify-center bg-gray-100 pt-1">
+        
+        <div>
+            <span class="float-left ">
+                <a href="https://iitg.ac.in"><img src="https://i.ibb.co/8z2qtGM/1200px-IIT-Guwahati-Logo-1.png" alt="1200px-IIT-Guwahati-Logo-1" border="0"></a>
+              </span>
+              <span class="float-left pl-4 align-center inline-block align-middle h-full py-2">
+              <h1 class="text-sm m-auto align-center text-center leading-normal align-middle">INDIAN INSTITUTE OF TECHNOLOGY GUWAHATI</h1>
+              </span>
+        </div>
+      </div>
+    </div>
+	
+	
+
+<!-- 2 bar-->
+
+
+        <div class="flex  w-full ">
+          <div class="flex flex-grow" id='nav-content' >
+            <div class="hidden flex-grow items-center justify-center text-sm font-mono h-20 px-4 w-50 text-blue-550 bg-accent active-tab">
+              <a href="/regoff" class="text-center font-bold bar2 heads cursor-pointer" style="font-size: 18px;">OFFICE OF THE REGISTRAR</a>
+            </div>
+            <!-- bg-accent -->
+            <div class="flex px-8 items-center space-x-16 h-20 ">
+              <a class="text-center w-100 bar2 heads text-blue-500 font-bold" style="font-size: 16px;" href="/regoff/fr">Former Registrars</a>
+			  <a class="text-center w-100 bar2 heads hover:text-blue-500" style="font-size: 16px;" href="/regoff/off">Officials</a>
+			  <a class="text-center w-100 bar2 heads hover:text-blue-500" style="font-size: 16px;" href="/regoff/rule">Important Links</a>
+            </div>
+          </div>
+        </div>
+	
+	
+	
+		
+	<section id="registrars">
+  <section class="text-gray-600 body-font ">
+      <div class="container md:px-32 px-5 py-20 mx-auto">
+		  <div class=" text-4xl mb-5">
+			<h1 class="w-13/13 heads text-black font-semibold" >
+				Former Registrars
+			</h1>
+        
+      	  </div>
+          <div class="flex justify-left flex-wrap -m-4">
+              <% registrars.forEach(registrar=>{ %>
+                  <div class="profileCard h-auto m-4 bg-white rounded-md"
+                      style="box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 0.1), 0px 1.6px 3.6px rgba(0, 0, 0, 0.13);width: 350px;">
+                      <div class="box-border pointer-events-none  border-white w-full h-48 bg-gray-100 rounded-md" style="height: 310px;">
+                          <img alt="official" class="rounded w-auto h-full md:mr-2 sm:mb-0 mb object-cover object-center"
+                              src="<%=registrar.pic%>" style="object-fit: fill;  display:block; margin-left: auto; margin-right: auto;">
+                      </div>
+                      <div class="box-border px-3 pt-3 pb-2 ">
+                          <div class=" md:bottom-14 bottom-4 md:-right-16 z-10 ">
+							 <div class="flex justify-between">
+								 <div class="my-2  ">
+                              <p class="text-gray-900 text-lg mr-10 title-font font-medium mb-2 font-bold text-left ">
+                                  <%=registrar.name%>
+                              </p>
+								 </div>
+								 <div class="my-2">
+                              <p class="mb-4 text-right">
+                                  <%=registrar.post%>
+                              </p>
+								 </div>
+							  </div>
+							  </div>
+						  <div class="border-t-2"></div>
+						  <div class="md:bottom-14 bottom-4 md:-right-16 z-10 flex">
+							  <p class="mb-4 ttttttttxxxxxxxxeeeeeeee" style ="font-family: Red Hat Display;">
+                                  <%=registrar.date%>
+                              </p>
+                          </div>
+                          <!-- <p class="pt-0.5 pb-1 text-sm font-normal text-gray-600">twitter_handle</p> -->
+                      </div>
+                  </div>
+                  <% }) %>
+          </div>
+      </div>
+  </section>
+</section>
+
+		
+<!--CONTACT US-->
+
+	
+<footer class="text-gray-600 body-font bg-gray-200">
+		<div class="container px-5 pt-8 pb-3 sm:py-10 mx-auto flex items-center sm:flex-row flex-col">
+			<div class="container flex mt-5" >
+	  <div class="max-w-md w-auto lg:flex ">
+		<!--div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"-->
+		  <img class = "h-40  align-top px-12" src="https://event.iitg.ac.in/icann2019/Proceedings_LaTeX/2019/IITG_logo.png" title="IIT_GUWAHATI">
+		</div>
+		<div >
+		  <div class="mb-8">
+			<div class="IITG">
+				<p class="text-grey-darker text-3xl font-black text-black tracking-widest">Office of the Registrar</p>
+			</div>
+			<p class="text-grey-darker text-2xl whitespace-no-wrap text-gray-800 py-4">Indian Institue of Technology, Guwahati<br>Guwahati 781039<br>Assam, INDIA</p>
+			<%contactInfos.forEach(contactInfo=>{ %>
+			<p class="text-grey-darker text-xl font-medium text-gray-600 tracking-widest leading-relaxed" style ="font-family: Red Hat Display;">
+				Phone: <%=contactInfo.phone%><br>Fax: <%=contactInfo.fax%><br>Email: <%=contactInfo.email%></p>
+			  <% }) %>
+		  </div>
+		</div>
+	</div>
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+            href="https://www.facebook.com/swciitg" target="_blank">
+            <!-- <img src="images/nav/hab_logo.svg" alt="hab-logo" class="transform scale-50"> -->
+            <img src="/regoff/images/svg/swc-logo.svg" alt="swc-logo" class="mr-3 transform scale-110">
+            <span class="text-xl">Students' Web Committee</span>
+        </a>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+
+
+<script>
+    $(document).ready(function(){
+      $('#nav-content').prepend($('.active-tab'));
+    })
+    
+  </script>
+<script>
+    const smallnav = document.querySelector("#smallnav");
+    const menu = document.querySelector("#menu");
+
+    smallnav.addEventListener('click', ()=>{
+      if(menu.classList.contains('hidden')){
+          menu.classList.remove('hidden');
+      }else{
+          menu.classList.add('hidden');
+      }
+    })
+  </script>
+
+<script>
+  document.addEventListener("scroll", function () {
+    const navbar = document.querySelector("#shownav");
+    const navbarHeight = 100;
+
+    const distanceFromTop = Math.abs(
+      document.body.getBoundingClientRect().top
+    );
+
+    if (distanceFromTop > navbarHeight+460){
+		navbar.classList.remove("invisible");
+		//navbar.classList.add("transition-property: all transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) transition-duration: 150ms");
+	}
+    else navbar.classList.add("invisible");
+  });
+</script>
+
+
+
+</html>
